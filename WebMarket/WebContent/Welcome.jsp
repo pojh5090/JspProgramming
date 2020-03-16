@@ -1,9 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.util.Date" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel ="stylesheet"
 	href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <title>Welcome</title>
@@ -16,9 +17,10 @@
 			</div>
 		</div>
 	</nav>
-	<%! String greeting = "Welcome to Web Shopping Mall";
+	<%! String greeting = "웹 쇼핑몰에 오신 것을 환영합니다";
 		String tagline = "Welcome to Web Market!";
 	%>
+
 	<div class="jumbotron">
 		<div class="container">
 			<h1 class ="display-3">
@@ -31,6 +33,21 @@
 			<h3>
 				<%= tagline %>
 			</h3>
+		<%
+			Date day = new java.util.Date();
+			String am_pm;
+			int hour = day.getHours();
+			int minute = day.getMinutes();
+			int second = day.getSeconds();
+			if( hour / 12 == 0) {
+				am_pm = "AM";
+			} else {
+				am_pm = "PM";
+				hour = hour - 12;
+			}
+			String CT = hour + ":" + minute + ":" + second + " " + am_pm;
+			out.println("현재 접속 시각: " + CT + "\n");
+		%>
 		</div>
 		<hr>
 	</div>
