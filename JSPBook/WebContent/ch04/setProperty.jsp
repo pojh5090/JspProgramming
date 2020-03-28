@@ -8,12 +8,9 @@
 </head>
 <body>
 	<jsp:useBean id="person" class="ch04.Person" scope="request" />
-	<p>  아이디 : <%=person.getId() %>
-	<p>  이름 : <%=person.getName() %>
-		<%
-			person.setId(201611111);
-			person.setName("강강강");
-		%>
-		<jsp:include page="useBean03.jsp">
+	<jsp:setProperty name="person" property="id" value="201610303" />
+	<jsp:setProperty name="person" property="name" value="홍길동" />
+	<p>  아이디 : <% out.println(person.getId()); %>
+	<p>  이름 : <% out.println(person.getName()); %>
 </body>
 </html>
