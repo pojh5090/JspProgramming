@@ -20,6 +20,15 @@ public class ProductRepository {
 	}   ////이 함수는 상품 목록에서 상품 아이디와 일치하는 상품을 가져오는 메소드를 작성하는거임~~
 	
 	private ArrayList<Product> listOfProducts = new ArrayList<Product>();
+	private static ProductRepository instance = new ProductRepository();
+	
+	public static ProductRepository getInstance() {
+		return instance;
+	}
+	
+	public void addProduct(Product product) {
+		listOfProducts.add(product);
+	}
 	
 	public ProductRepository() {
 		Product phone = new Product("P1234", "iPhone 8", 800000);
