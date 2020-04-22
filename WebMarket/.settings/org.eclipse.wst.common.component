@@ -2,6 +2,7 @@
     <wb-module deploy-name="WebMarket">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/WebContent/resources/images"/>
         <property name="context-root" value="WebMarket"/>
         <property name="java-output-path" value="/WebMarket/build/classes"/>
     </wb-module>

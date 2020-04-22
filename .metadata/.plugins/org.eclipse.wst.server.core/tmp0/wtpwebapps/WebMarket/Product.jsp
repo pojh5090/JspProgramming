@@ -5,7 +5,7 @@
 <jsp:useBean id="productDAO" class="dao.ProductRepository" scope="session" />
 <html>
 <head>
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="./resources/css/bootstrap.min.css">
 <title>상품 상세 정보</title>
 </head>
 <body>
@@ -22,6 +22,9 @@
 	%>
 	<div class="container">
 		<div class="row">
+			<div class="col-md-5">
+				<img src="c:/upload/<%=product.getFilename()%>" style="width: 100%" />
+			</div>
 			<div class="col-md-6">
 				<h3><%=product.getPname() %></h3>
 				<p><%=product.getDescription() %>
@@ -32,7 +35,7 @@
 				<p> <b>재고 수</b> : <%=product.getUnitsInStock() %>
 				<h4><%= product.getUnitPrice() %>원</h4>
 				<p> <a href="#" class="btn btn-info"> 상품 주문 &raquo;</a>
-				<a href="./products.jsp" class="btn btn-secondary"> 상품 목록 &raquo;</a>			
+				<a href="./Products.jsp" class="btn btn-secondary"> 상품 목록 &raquo;</a>			
 			</div>
 		</div>
 		<hr>
