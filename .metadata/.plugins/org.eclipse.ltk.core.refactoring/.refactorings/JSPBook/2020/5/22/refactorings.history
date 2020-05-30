@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;validation5.jsp&apos; to &apos;js&apos;&#x0D;&#x0A;- Original project: &apos;JSPBook&apos;&#x0D;&#x0A;- Destination element: &apos;js&apos;&#x0D;&#x0A;- Original element: &apos;validation5.jsp&apos;" description="Copy file" element1="WebContent/ch08/validation5.jsp" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1590830662750" target="/WebMarket/WebContent/resources/js" units="0" version="1.0"/>
+</session>
