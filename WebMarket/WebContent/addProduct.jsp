@@ -5,6 +5,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="./resources/css/bootstrap.min.css">
+<script type="text/javascript" src="./resources/js/validation.js"></script>
 <title>상품 등록</title>
 </head>
 <body>
@@ -74,7 +75,7 @@
 			</div>
 			<div class="form-group row">
 				<div class="col-sm-offset-2 col-sm-10">
-					<input type="submit" class="btn btn-primary" value="등록">
+					<input type="button" class="btn btn-primary" value="등록" onclick="CheckAddProduct()">
 				</div>
 			</div>
 		</form>

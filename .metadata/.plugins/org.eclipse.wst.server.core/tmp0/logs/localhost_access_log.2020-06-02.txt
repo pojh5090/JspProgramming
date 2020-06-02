@@ -1,0 +1,4 @@
+127.0.0.1 - - [02/Jun/2020:21:39:39 +0900] "GET / HTTP/1.1" 404 750
+0:0:0:0:0:0:0:1 - - [02/Jun/2020:21:39:41 +0900] "GET /WebMarket/addProduct.jsp HTTP/1.1" 200 2849
+0:0:0:0:0:0:0:1 - - [02/Jun/2020:21:39:41 +0900] "GET /WebMarket/resources/js/validation.js HTTP/1.1" 404 798
+0:0:0:0:0:0:0:1 - - [02/Jun/2020:21:39:41 +0900] "GET /WebMarket/resources/css/bootstrap.min.css HTTP/1.1" 200 144877
